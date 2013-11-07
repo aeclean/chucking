@@ -1,10 +1,10 @@
 //sequencer
-Gain master => Chorus c => dac;
+Gain master => dac;
 SndBuf kick => master;
 SndBuf hihat => master;
 SndBuf snare => master;
 
-.1 => master.gain;
+.5 => master.gain;
 
 //load drum parts
 me.dir() + "/audio/kick_01.wav" => kick.read;

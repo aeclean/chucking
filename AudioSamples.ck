@@ -5,5 +5,5 @@ SndBuf s => dac;
 filename => s.read;
 0 => s.pos;
 
-1::second => now;
+5::second => now;
 <<< filename >>>;
