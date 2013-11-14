@@ -10,10 +10,12 @@ click.samples() => click.pos;
 kick.samples() => kick.pos;
 
 [1, 0, 0, 0, 1, 0, 0, 0] @=> int kick_ptrn_1[];
-[0, 0, 1, 0, 0, 0, 1, 0] @=> int kick_ptrn_2[];
-[0, 1, 1, 0, 0, 0, 1, 0] @=> int kick_ptrn_3[];
 [1, 0, 1, 0, 1, 0, 1, 0] @=> int click_ptrn_1[];
+
+[0, 0, 1, 0, 0, 0, 1, 0] @=> int kick_ptrn_2[];
 [1, 1, 1, 1, 1, 1, 1, 1] @=> int click_ptrn_2[];
+
+[0, 1, 1, 0, 0, 0, 1, 1] @=> int kick_ptrn_3[];
 [1, 1, 1, 1, 1, 1, 1, 1] @=> int click_ptrn_3[];
 
 
@@ -41,7 +43,7 @@ fun void section(int kickArray[], int clickArray[], float beatTime)
 while(true)
 {
     //Procedural - ABA form
-    section(kick_ptrn_1, click_ptrn_1, .2);
-    section(kick_ptrn_2, click_ptrn_2, .2);
+    //section(kick_ptrn_1, click_ptrn_1, .2);
+    //section(kick_ptrn_2, click_ptrn_2, .2);
     section(kick_ptrn_3, click_ptrn_3, .2);
 }
