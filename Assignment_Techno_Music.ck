@@ -5,10 +5,10 @@ SndBuf snare => dac;
 SndBuf melody => dac;
 
 //load audio files
-me.dir() + "/week3/audio/hihat_03.wav" => hihat.read;
-me.dir() + "/week3/audio/kick_01.wav" => kick.read;
-me.dir() + "/week3/audio/snare_02.wav" => snare.read;
-me.dir() + "/week3/audio/stereo_fx_03.wav" => melody.read;
+me.dir() + "/audio/hihat_03.wav" => hihat.read;
+me.dir() + "/audio/kick_01.wav" => kick.read;
+me.dir() + "/audio/snare_02.wav" => snare.read;
+me.dir() + "/audio/stereo_fx_03.wav" => melody.read;
 
 //set all audio as "mute"
 hihat.samples() => hihat.pos;
