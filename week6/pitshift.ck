@@ -1,6 +1,6 @@
 //Sound Chain
 adc => PitShift pit => dac;
-0.1 => pit.shift;
+0.9 => pit.shift;
 
 while(true)
 {
