@@ -7,5 +7,5 @@ while(true)
     Math.random2f(200.0, 1000.0) => m.freq;
     
     1.0 => m.noteOn;
-    0.4::second => now;
+    0.1::second => now;
 }
